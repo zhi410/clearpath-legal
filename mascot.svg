@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="620" viewBox="162 140 700 620">
+<defs>
+  <linearGradient id="a_cloudFill" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="0.55" stop-color="#FDFBF7"/>
+    <stop offset="1" stop-color="#F1EBDF"/>
+  </linearGradient>
+  <radialGradient id="a_innerShade" cx="0.5" cy="1" r="0.75">
+    <stop offset="0" stop-color="#E4DCCC" stop-opacity="0.85"/>
+    <stop offset="0.6" stop-color="#EDE6D8" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#FDFBF7" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="a_blush" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#E88D67" stop-opacity="0.75"/>
+    <stop offset="0.7" stop-color="#E88D67" stop-opacity="0.45"/>
+    <stop offset="1" stop-color="#E88D67" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="a_starFill" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F9DE92"/>
+    <stop offset="0.5" stop-color="#F4C95D"/>
+    <stop offset="1" stop-color="#E9B441"/>
+  </linearGradient>
+  <radialGradient id="a_starGlow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.55"/>
+    <stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="a_cloudClip">
+    <path d="M 310 728 C 240 728 190 680 190 616 C 190 556 238 510 298 508 C 304 436 364 384 438 384 C 470 384 498 394 520 410 C 548 350 610 318 672 334 C 744 352 786 420 776 492 C 806 500 834 540 834 590 C 834 668 776 728 704 728 C 600 738 420 738 310 728 Z"/>
+  </clipPath>
+  <clipPath id="a_mouthClip">
+    <path d="M 486 598 A 26 26 0 0 0 538 598 Z"/>
+  </clipPath>
+</defs>
+  <g id="a_mascot">
+    <!-- 星星微光與星星 -->
+    <circle cx="520" cy="236" r="110" fill="url(#a_starGlow)"/>
+    <path d="M 520 160 C 529 212 544 227 596 236 C 544 245 529 260 520 312 C 511 260 496 245 444 236 C 496 227 511 212 520 160 Z" fill="url(#a_starFill)"/>
+    <path d="M 640 196 C 643 212 648 217 664 220 C 648 223 643 228 640 244 C 637 228 632 223 616 220 C 632 217 637 212 640 196 Z" fill="#F4C95D" opacity="0.9"/>
+    <circle cx="410" cy="200" r="7" fill="#F4C95D" opacity="0.8"/>
+    <!-- 雲朵本體 -->
+    <path d="M 310 728 C 240 728 190 680 190 616 C 190 556 238 510 298 508 C 304 436 364 384 438 384 C 470 384 498 394 520 410 C 548 350 610 318 672 334 C 744 352 786 420 776 492 C 806 500 834 540 834 590 C 834 668 776 728 704 728 C 600 738 420 738 310 728 Z" fill="url(#a_cloudFill)"/>
+    <g clip-path="url(#a_cloudClip)">
+      <ellipse cx="512" cy="760" rx="380" ry="150" fill="url(#a_innerShade)"/>
+      <path d="M 250 560 C 262 520 300 512 330 520" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+      <path d="M 590 372 C 620 352 660 350 690 366" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+    </g>
+    <!-- 腮紅 -->
+    <ellipse cx="378" cy="612" rx="42" ry="26" fill="url(#a_blush)"/>
+    <ellipse cx="646" cy="612" rx="42" ry="26" fill="url(#a_blush)"/>
+    <!-- 豆豆眼與高光 -->
+    <ellipse cx="432" cy="562" rx="25" ry="28" fill="#2C2C2E"/>
+    <ellipse cx="592" cy="562" rx="25" ry="28" fill="#2C2C2E"/>
+    <circle cx="441" cy="551" r="9" fill="#FFFFFF"/>
+    <circle cx="601" cy="551" r="9" fill="#FFFFFF"/>
+    <circle cx="425" cy="574" r="3.5" fill="#FFFFFF" opacity="0.7"/>
+    <circle cx="585" cy="574" r="3.5" fill="#FFFFFF" opacity="0.7"/>
+    <!-- 半圓微笑小嘴 -->
+    <path d="M 486 598 A 26 26 0 0 0 538 598 Z" fill="#2C2C2E"/>
+    <g clip-path="url(#a_mouthClip)">
+      <ellipse cx="512" cy="626" rx="16" ry="11" fill="#E88D67"/>
+    </g>
+  </g>
+</svg>
